@@ -1,17 +1,20 @@
-body{
+body {
     background-color: black;
 }
+
 h1 {
     font-size: 32px;
     color: white;
     margin-bottom: 20px;
     text-align: center;
 }
-.sub-main{
+
+.sub-main {
     font-size: 20px;
     text-align: center;
     color: #c28bef;
 }
+
 .container {
     background-color: #b575e9;
     padding: 40px;
@@ -22,9 +25,11 @@ h1 {
     text-align: center;
     margin: 50px auto;
 }
+
 .search-box {
     margin-bottom: 20px;
 }
+
 #city-input {
     padding: 10px;
     width: calc(100% - 22px);
@@ -33,6 +38,7 @@ h1 {
     border-radius: 4px;
     margin-bottom: 20px;
 }
+
 #search-btn {
     padding: 10px;
     cursor: pointer;
@@ -42,39 +48,22 @@ h1 {
     border-radius: 4px; 
 }
 
-#temperature {
+#temperature, #weather-description, #city-name {
     font-size: 24px;
-    color: yellow ;
-    font-weight: bold;
-    margin-bottom: 5px;
- }
- #weather-description {
-    font-size: 24px;
-    color:yellow;
-    font-weight: bold;
-    margin-bottom: 5px;
- }
- #city-name {
-    font-size: 24px;
-    font-weight: bold;
     color: yellow;
+    font-weight: bold;
     margin-bottom: 5px;
- }
- .weather-info {
+}
+
+.weather-info {
     background-color: black;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
- }
- .weather-info p {
-    transition: all 0.3s ease-in-out;
 }
 
-.weather-info p:hover {
-    color: #007BFF;
-    transform: scale(1.05);
-}
-.forecast {
-    margin-top: 20px;
+.forecast h2 {
+    text-align: center;
+    color: white;
 }
 
 .forecast-days {
@@ -82,27 +71,14 @@ h1 {
     justify-content: space-around;
     flex-wrap: wrap;
 }
-/* Forecast Styles */
-.forecast {
-    margin-top: 20px;
-}
-
-.forecast h2 {
-    text-align: center;
-}
-
-.forecast-days {
-    display: flex;
-    justify-content: space-around;
-}
 
 .day-card {
-    background-color:#dcbef5;
+    background-color: #dcbef5;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 10px;
-    width: 150px; /* Adjust the width as needed */
+    width: 150px;
     text-align: center;
 }
 
@@ -112,7 +88,7 @@ h1 {
 }
 
 .day-weather-icon img {
-    width: 50px; /* Adjust the size of the weather icon */
+    width: 50px;
     height: auto;
 }
 
@@ -121,14 +97,13 @@ h1 {
     margin: 10px 0;
 }
 
-.day-description {
+.day-description, .day-humidity {
     color: #555;
 }
-    
 
 @media (max-width: 600px) {
-.container {
-    width: 100%;
-    margin: 20px;
+    .container {
+        width: 100%;
+        margin: 20px;
     }
-}    
+}
