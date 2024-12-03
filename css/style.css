@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -17,11 +18,11 @@ h1 {
 
 .container {
     background-color: #b575e9;
-    padding: 40px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 450px;
-    height: 250px;
+    height: auto;
     text-align: center;
     margin: 50px auto;
 }
@@ -45,7 +46,17 @@ h1 {
     background-color: #007BFF;
     color: white;
     border: none;
-    border-radius: 4px; 
+    border-radius: 4px;
+}
+
+#toggle-temp-unit {
+    margin-top: 2px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 #temperature, #weather-description, #city-name {
@@ -87,18 +98,19 @@ h1 {
     margin-bottom: 10px;
 }
 
-.day-weather-icon img {
-    width: 50px;
-    height: auto;
-}
-
 .day-temperature {
     font-size: 1.5em;
     margin: 10px 0;
 }
 
-.day-description, .day-humidity {
+.day-humidity {
     color: #555;
+}
+
+.loader {
+    text-align: center;
+    color: white;
+    font-size: 18px;
 }
 
 @media (max-width: 600px) {
